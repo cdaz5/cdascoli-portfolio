@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from 'styled-components';
 
-function App() {
+import { GlobalStyles, lightTheme, SlashContainer } from 'styles';
+
+const App = () => {
+  // TODO: add light/dark theme state change here;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <ThemeProvider theme={lightTheme}>
+        <SlashContainer>hi</SlashContainer>
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
