@@ -1,7 +1,8 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyles, lightTheme, SlashContainer } from 'styles';
+import { GlobalStyles, lightTheme } from 'styles';
+import Introduction from 'components/introduction';
 
 const App = () => {
   // TODO: add light/dark theme state change here;
@@ -10,7 +11,7 @@ const App = () => {
     <>
       <GlobalStyles />
       <ThemeProvider theme={lightTheme}>
-        <SlashContainer>hi</SlashContainer>
+        <Introduction />
       </ThemeProvider>
     </>
   );
