@@ -22,7 +22,7 @@ const Profile = () => (
 
     <Flex justifyContent="center">
       {LINKS.map(({ href, icon }) => (
-        <Link target="_blank" rel="noopener noreferrer" href={href}>
+        <Link key={href} target="_blank" rel="noopener noreferrer" href={href}>
           {icon}
         </Link>
       ))}

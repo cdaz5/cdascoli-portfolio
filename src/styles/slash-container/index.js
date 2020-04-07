@@ -5,7 +5,7 @@ import { colorLookup } from '../theme';
 const SlashContainer = styled.article`
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding: 150px 0;
   background-color: ${colorLookup()};
   justify-content: center;
   align-items: center;

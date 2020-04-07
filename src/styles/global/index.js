@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1;
     margin: 0;
     padding: 0;
-    font-family: 'Inconsolata';
+    font-family: 'Crimson Text', serif;
     height: 100%;
   }
 
@@ -42,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
   /* typeist css for blinking cursor */
   .Typist .Cursor {
     display: inline-block;
-    font-size: 2rem;
+    1.5rem
     position: relative;
     top: 1px;
 

@@ -104,10 +104,7 @@ const AutoType = ({ setIsTyping, isTyping }) => (
         <Typist.Delay ms={100} />
 
         <Copy variant="codeGreen">a universal language':</Copy>
-        <Copy noSpace variant="codeRed">
-          1
-        </Copy>
-        <Copy>,</Copy>
+        <Copy noSpace>1,</Copy>
       </TextContainer>
       <br />
       <TextContainer>
