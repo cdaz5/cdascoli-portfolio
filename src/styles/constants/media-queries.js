@@ -3,6 +3,7 @@ const customMediaQuery = ({ maxOrMin, width }) =>
 
 const MEDIA_QUERIES = {
   maxIPhone: customMediaQuery({ maxOrMin: 'max', width: 420 }),
+  maxXLIPhone: customMediaQuery({ maxOrMin: 'max', width: 743 }),
   maxIPadMini: customMediaQuery({ maxOrMin: 'max', width: 768 }),
   maxIPad: customMediaQuery({ maxOrMin: 'max', width: 945 }),
   maxSmall: customMediaQuery({ maxOrMin: 'max', width: 768 }),

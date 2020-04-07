@@ -9,7 +9,7 @@ const baseStyles = ({ numOfSpaces }) => css`
   font-family: Inconsolata;
   display: inline-block;
   margin: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   /* content doesnt accept dynamic vars (might be styled components bug) so have to hard code these amounts */
   &:after {
     ${({ noSpace }) =>
@@ -54,7 +54,7 @@ export const Copy = styled.p`
   margin-left: ${({ marginLeft }) => marginLeft && '-20px'};
 
   ${MEDIA_QUERIES.maxIPhone} {
-    margin-left: ${({ marginLeft }) => marginLeft && '0'};
+    margin-left: ${({ marginLeft }) => marginLeft && '-10px'};
   }
 `;
 
@@ -87,6 +87,12 @@ export const ProfileContainer = styled.span`
   transform: translateX(-1000px);
   transition: all 1.2s ease-in-out;
 
+  h1,
+  h2,
+  h3 {
+    font-weight: 400;
+  }
+
   &.profile-enter-active {
     transform: translateX(0);
   }
@@ -105,6 +111,7 @@ export const AutoTypeContainer = styled.span`
 
   .Typist {
     justify-content: ${({ isTyping }) => (isTyping ? 'center' : 'flex-start')};
+    font-size: 1.5rem;
   }
 `;
 

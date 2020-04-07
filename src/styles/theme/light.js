@@ -2,6 +2,11 @@ const lightTheme = {
   colors: {
     main: '#FEF6E1',
     secondary: '#fff',
+    white: '#fff',
+    accent: '#00a498',
+    secondaryAccent: '#008dd8',
+    medGray: '#4a4a4a',
+    ltGray: '#979797',
     black: '#26262C',
     codeBlue: '#008dd8',
     codeTeal: '#0094b2',
