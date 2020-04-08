@@ -1,4 +1,5 @@
 const lightTheme = {
+  type: 'light',
   colors: {
     main: '#FEF6E1',
     secondary: '#fff',
@@ -7,7 +8,7 @@ const lightTheme = {
     secondaryAccent: '#008dd8',
     medGray: '#4a4a4a',
     ltGray: '#979797',
-    black: '#26262C',
+    black: '#4a4a4a',
     codeBlue: '#008dd8',
     codeTeal: '#0094b2',
     codeGreen: '#00a498',

@@ -27,18 +27,18 @@ const Project = ({
   <SlashContainer variant={variant}>
     <ProjectContainer>
       <ProjectContent>
-        <Header>
+        <Header variant={variant}>
           {appName}
           {appUrl && (
             <ExternalLink name={`${appName} code on github`} href={techUrl} />
           )}
         </Header>
-        <Copy>{appDescription}</Copy>
-        <SubHeader>
+        <Copy variant={variant}>{appDescription}</Copy>
+        <SubHeader variant={variant}>
           Tech Stack
           <ExternalLink name={`${appName} code on github`} href={techUrl} />
         </SubHeader>
-        <Copy>{techDescription}</Copy>
+        <Copy variant={variant}>{techDescription}</Copy>
         <Flex justifyContent="space-evenly" width="100%">
           {techLogos.map(({ type, alt, Component }) =>
             type === 'image' ? <Image src={Component} alt={alt} /> : Component,

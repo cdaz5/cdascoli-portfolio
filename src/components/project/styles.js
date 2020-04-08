@@ -1,9 +1,14 @@
 import styled, { css } from 'styled-components';
 
-import { colorLookup, MEDIA_QUERIES } from 'styles';
+import { MEDIA_QUERIES } from 'styles';
+
+const getTextColor = ({ theme, variant }) =>
+  console.log(variant) || variant === 'white'
+    ? theme.colors['medGray']
+    : theme.colors['black'];
 
 const baseStyles = css`
-  color: ${colorLookup('medGray')};
+  color: ${getTextColor};
 `;
 
 export const Header = styled.h1`

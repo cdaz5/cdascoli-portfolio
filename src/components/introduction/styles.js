@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Flex, SlashContainer, MEDIA_QUERIES } from 'styles';
+import { Flex, SlashContainer, MEDIA_QUERIES, colorLookup } from 'styles';
 
 const getColor = ({ theme: { colors }, variant = 'black' }) => colors[variant];
 
@@ -63,19 +63,34 @@ export const TextContainer = styled(Flex)`
   margin: 4px 0;
 `;
 
+const darkFilter = css`
+  filter: drop-shadow(0px 0px 0px #212121) brightness(100%) sepia(1);
+`;
+
+const lightFilter = css`
+  filter: drop-shadow(8px 8px 10px gray) sepia(20%) brightness(130%);
+`;
 export const Avatar = styled.img`
   border-radius: 50%;
-  filter: drop-shadow(8px 8px 10px gray) sepia(20%) brightness(130%);
   width: 220px;
   height: 220px;
+  ${({ theme }) =>
+    console.log(theme) || (theme.type === 'dark' ? darkFilter : lightFilter)};
 `;
 
 export const Header = styled.h1`
   font-size: 2rem;
+  color: ${colorLookup('black')};
+`;
+
+export const SubHeader = styled.h2`
+  font-size: 1.25rem;
+  color: ${colorLookup('black')};
 `;
 
 export const Link = styled.a`
   margin-right: 20px;
+  color: ${colorLookup('black')};
 `;
 
 export const ProfileContainer = styled.span`
