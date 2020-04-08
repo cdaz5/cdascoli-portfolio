@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
-import { colorLookup } from 'styles';
-
 export const Link = styled.a`
-  color: ${colorLookup('medGray')};
+  color: inherit;
   margin-left: 8px;
 `;

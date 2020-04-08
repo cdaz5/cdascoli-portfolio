@@ -3,7 +3,7 @@ import React from 'react';
 import Headshot from 'assets/pngs/headshot.jpg';
 import { Flex, Spacer } from 'styles';
 
-import { Avatar, Header, Link, ProfileContainer } from './styles';
+import { Avatar, Header, Link, ProfileContainer, SubHeader } from './styles';
 import { LINKS } from './constants';
 
 const Profile = () => (
@@ -14,10 +14,10 @@ const Profile = () => (
     <Header>Chris Dascoli</Header>
     <Spacer topMargin="6px" />
 
-    <h2>Full Stack Developer</h2>
+    <SubHeader>Full Stack Developer</SubHeader>
     <Spacer topMargin="6px" />
 
-    <h3>Web/Mobile</h3>
+    <SubHeader as="h3">Web/Mobile</SubHeader>
     <Spacer topMargin="6px" />
 
     <Flex justifyContent="center">

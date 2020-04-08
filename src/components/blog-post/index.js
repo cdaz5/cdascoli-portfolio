@@ -15,7 +15,6 @@ const BlogPosts = () => {
   const showLess = cursor > 2;
   const isMoreDisabled = cursor >= data.length;
 
-  console.log(cursor);
   return (
     <SlashContainer variant="secondary">
       <h1>Blog Posts</h1>

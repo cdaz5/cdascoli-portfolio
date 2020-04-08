@@ -1,18 +1,25 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { GlobalStyles, lightTheme } from 'styles';
+import { GlobalStyles } from 'styles';
 import Introduction from 'components/introduction';
 import BlogPosts from 'components/blog-post';
 import Project from 'components/project';
+import Switch from 'components/switch';
+import useTheme from 'hooks/use-theme';
+
+import { SwitchContainer } from './styles';
 
 const App = () => {
-  // TODO: add light/dark theme state change here;
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <>
       <GlobalStyles />
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={theme}>
+        <SwitchContainer>
+          <Switch onChange={toggleTheme} />
+        </SwitchContainer>
         <Introduction />
         <BlogPosts />
         <Project />
