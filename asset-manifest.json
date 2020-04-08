@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/cdascoli-portfolio/static/js/main.c0f92988.chunk.js",
+    "main.js.map": "/cdascoli-portfolio/static/js/main.c0f92988.chunk.js.map",
+    "runtime-main.js": "/cdascoli-portfolio/static/js/runtime-main.4b0339ef.js",
+    "runtime-main.js.map": "/cdascoli-portfolio/static/js/runtime-main.4b0339ef.js.map",
+    "static/js/2.b20aa08f.chunk.js": "/cdascoli-portfolio/static/js/2.b20aa08f.chunk.js",
+    "static/js/2.b20aa08f.chunk.js.map": "/cdascoli-portfolio/static/js/2.b20aa08f.chunk.js.map",
+    "index.html": "/cdascoli-portfolio/index.html",
+    "precache-manifest.f0fefcda0c2bd22eaad02e176a1b2bf9.js": "/cdascoli-portfolio/precache-manifest.f0fefcda0c2bd22eaad02e176a1b2bf9.js",
+    "service-worker.js": "/cdascoli-portfolio/service-worker.js",
+    "static/js/2.b20aa08f.chunk.js.LICENSE.txt": "/cdascoli-portfolio/static/js/2.b20aa08f.chunk.js.LICENSE.txt",
+    "static/media/angry-weather.png": "/cdascoli-portfolio/static/media/angry-weather.3f519fd6.png",
+    "static/media/app.341b206a.svg": "/cdascoli-portfolio/static/media/app.341b206a.svg",
+    "static/media/clap.d25f0c44.svg": "/cdascoli-portfolio/static/media/clap.d25f0c44.svg",
+    "static/media/email.86ba9f86.svg": "/cdascoli-portfolio/static/media/email.86ba9f86.svg",
+    "static/media/external-link.0a17d6b1.svg": "/cdascoli-portfolio/static/media/external-link.0a17d6b1.svg",
+    "static/media/github.e17cd046.svg": "/cdascoli-portfolio/static/media/github.e17cd046.svg",
+    "static/media/graphql.png": "/cdascoli-portfolio/static/media/graphql.e7f32a3e.png",
+    "static/media/headshot.jpg": "/cdascoli-portfolio/static/media/headshot.0bb938cf.jpg",
+    "static/media/linkedin.ddc72857.svg": "/cdascoli-portfolio/static/media/linkedin.ddc72857.svg",
+    "static/media/medium.b797720c.svg": "/cdascoli-portfolio/static/media/medium.b797720c.svg",
+    "static/media/moon.b28c7874.svg": "/cdascoli-portfolio/static/media/moon.b28c7874.svg",
+    "static/media/nodejs.be2df796.svg": "/cdascoli-portfolio/static/media/nodejs.be2df796.svg",
+    "static/media/open-source.png": "/cdascoli-portfolio/static/media/open-source.92ffef87.png",
+    "static/media/redux.png": "/cdascoli-portfolio/static/media/redux.8251fe76.png",
+    "static/media/slacker.png": "/cdascoli-portfolio/static/media/slacker.154808e5.png",
+    "static/media/sun.d80810a7.svg": "/cdascoli-portfolio/static/media/sun.d80810a7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b0339ef.js",
+    "static/js/2.b20aa08f.chunk.js",
+    "static/js/main.c0f92988.chunk.js"
+  ]
+}
