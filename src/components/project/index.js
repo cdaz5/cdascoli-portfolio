@@ -41,7 +41,11 @@ const Project = ({
         <Copy variant={variant}>{techDescription}</Copy>
         <Flex justifyContent="space-evenly" width="100%">
           {techLogos.map(({ type, alt, Component }) =>
-            type === 'image' ? <Image src={Component} alt={alt} /> : Component,
+            type === 'image' ? (
+              <Image key={`${appName}-${alt}`} src={Component} alt={alt} />
+            ) : (
+              <Component key={`${appName}-${alt}`} height="50px" width="50px" />
+            ),
           )}
         </Flex>
       </ProjectContent>
@@ -55,7 +59,7 @@ const Project = ({
 const ProjectList = () => (
   <>
     {PROJECTS.map((project) => (
-      <Project {...project} />
+      <Project key={project.appName} {...project} />
     ))}
   </>
 );

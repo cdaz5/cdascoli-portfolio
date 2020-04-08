@@ -74,8 +74,7 @@ export const Avatar = styled.img`
   border-radius: 50%;
   width: 220px;
   height: 220px;
-  ${({ theme }) =>
-    console.log(theme) || (theme.type === 'dark' ? darkFilter : lightFilter)};
+  ${({ theme }) => (theme.type === 'dark' ? darkFilter : lightFilter)};
 `;
 
 export const Header = styled.h1`

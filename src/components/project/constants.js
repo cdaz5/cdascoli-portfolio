@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ReactLogo from 'assets/pngs/react.png';
 import ReduxLogo from 'assets/pngs/redux.png';
 import GraphQLLogo from 'assets/pngs/graphql.png';
@@ -28,7 +26,7 @@ export const PROJECTS = [
     techLogos: [
       { type: 'image', alt: 'react native logo', Component: ReactLogo },
       { type: 'image', alt: 'redux logo', Component: ReduxLogo },
-      { type: 'icon', Component: <AppStoreLogo height="50px" width="50px" /> },
+      { type: 'icon', alt: 'app store logo', Component: AppStoreLogo },
     ],
   },
   {
@@ -46,7 +44,7 @@ export const PROJECTS = [
       { type: 'image', alt: 'graphql logo', Component: GraphQLLogo },
       { type: 'image', alt: 'styled components logo', Component: StyledLogo },
       { type: 'image', alt: 'aws logo', Component: AwsLogo },
-      { type: 'icon', Component: <NodeLogo height="50px" width="50px" /> },
+      { type: 'icon', alt: 'node logo', Component: NodeLogo },
     ],
   },
   {
@@ -63,7 +61,7 @@ export const PROJECTS = [
       { type: 'image', alt: 'react logo', Component: ReactLogo },
       { type: 'image', alt: 'styled components logo', Component: StyledLogo },
       { type: 'image', alt: 'npm logo', Component: NpmLogo },
-      { type: 'icon', Component: <NodeLogo height="50px" width="50px" /> },
+      { type: 'icon', alt: 'node logo', Component: NodeLogo },
     ],
   },
 ];
