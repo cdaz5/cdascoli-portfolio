@@ -49,8 +49,8 @@ const Project = ({
           )}
         </Flex>
       </ProjectContent>
-      <ImageContainer>
-        <img src={appMockup} alt={`${appName} mockup`} />
+      <ImageContainer invert={appMockup.invert}>
+        <img src={appMockup.logo} alt={`${appName} mockup`} />
       </ImageContainer>
     </ProjectContainer>
   </SlashContainer>

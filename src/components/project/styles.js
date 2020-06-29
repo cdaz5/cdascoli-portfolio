@@ -75,5 +75,11 @@ export const ImageContainer = styled.div`
 
   img {
     max-width: 100%;
+    ${({ theme, invert }) =>
+      theme.type === 'dark' &&
+      invert &&
+      css`
+        filter: invert(1);
+      `}}
   }
 `;

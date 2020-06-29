@@ -92,6 +92,15 @@ export const Link = styled.a`
   color: ${colorLookup('black')};
 `;
 
+export const LinkContainer = styled.div`
+  display: flex;
+  justify-content: center;
+
+  ${Link}:last-child {
+    margin-right: 0 !important;
+  }
+`;
+
 export const ProfileContainer = styled.span`
   width: 30vw;
   justify-content: center;

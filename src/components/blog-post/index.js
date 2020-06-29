@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SlashContainer, Flex } from 'styles';
+import { SlashContainer, Flex, Spacer } from 'styles';
 import useFetch from 'hooks/use-fetch';
 import Button from 'components/button';
 import TextButton from 'components/text-button';
@@ -24,7 +24,12 @@ const BlogPosts = () => {
           return visible && <BlogCard key={post.id} {...post} />;
         })}
       </Flex>
-      {showLess && <TextButton onClick={showLessFn}>Show Less</TextButton>}
+      {showLess && (
+        <>
+          <TextButton onClick={showLessFn}>Show Less</TextButton>
+          <Spacer sideMargin="6px" />
+        </>
+      )}
       {data.length > 0 && (
         <Button disabled={isMoreDisabled} onClick={showMore} loading={loading}>
           Show More

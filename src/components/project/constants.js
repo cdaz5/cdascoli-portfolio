@@ -18,7 +18,7 @@ export const PROJECTS = [
     appName: 'Angry Weather',
     appDescription:
       "A simple ios 'angry' weather app that says how people really feel about bad weather.  It is currently in Beta testing in the App Store.",
-    appMockup: AngryWeatherLogo,
+    appMockup: { logo: AngryWeatherLogo, invert: false },
     appUrl: null,
     techDescription:
       'Angry Weather integrates with the Open Weather Map API while utilizing React Native, Redux, and vanilla CSS.',
@@ -34,7 +34,7 @@ export const PROJECTS = [
     appName: 'Slacker',
     appDescription:
       "A Slack clone web application emulating the best way to communicate since AOL AIM circa '96.",
-    appMockup: SlackerLogo,
+    appMockup: { logo: SlackerLogo, invert: false },
     appUrl: 'http://slacker.surge.sh/register',
     techDescription:
       'Slacker is built with React, Node.js, GraphQL, Apollo, Semantic UI, Styled Components, and PostgreSQL.  Backend is deployed via AWS EC2 and Docker, front-end via Surge.sh.',
@@ -52,7 +52,7 @@ export const PROJECTS = [
     appName: 'React Loaders Spinners',
     appDescription:
       'My contribution to the open source community is a React component-based library of CSS loaders and spinners that anyone can enjoy.',
-    appMockup: OpenSourceLogo,
+    appMockup: { logo: OpenSourceLogo, invert: true },
     appUrl: 'https://codesandbox.io/s/2prqo9p5wn',
     techDescription:
       'React-Loaders-Spinners is an NPM Module for React built with Styled-Components and React in a Node.js environment.',
